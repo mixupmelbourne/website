@@ -87,6 +87,21 @@
 				border-width: 0px;
 				background-size: cover;
 			}
+
+			/* These force the logo spaces to be squares */
+			.sub-sponsor.available:before {
+			  content: '';
+			  float: left;
+			  width: 0;
+			  height: 0;
+			  padding-bottom: 100%;
+			}
+			.sub-sponsor.available:after {
+			  display: table;
+			  clear: both;
+			}
+
+
 			@media (max-width: 575.98px) { 
 				.top-sponsor, .sub-sponsor {
 					font-size: 1.1rem;
