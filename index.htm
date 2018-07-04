@@ -55,6 +55,13 @@
 				display: inline-block;
 				width: 100%;
 			}
+			.sponsor-thanks {
+				font-family: "refrigerator-deluxe";
+				font-weight: 300;
+				font-size: 1.5rem;
+				color: #0B4E67;
+				margin-top: 1rem;
+			}
 			.sub-sponsor {
 				border: 2px dashed #FEF4D9;
 				border-radius: 1rem;
@@ -63,7 +70,11 @@
 				color: #FEF4D9;
 				font-size: 1.5rem;
 				padding: 0.75rem 1rem;
-				margin: 1rem;
+				margin: 0 1rem 1rem 1rem;
+			}
+			.sub-sponsor.available {
+				border-width: 0px;
+				background-size: cover;
 			}
 			@media (max-width: 575.98px) { 
 				.top-sponsor, .sub-sponsor {
@@ -219,9 +230,9 @@
 					</div>
 
 					<!-- <div class="container"> -->
+						<p class="sponsor-thanks">Mixup Melbourne is an affordable event, thanks to our sponsors:</p>
 						<div class="row justify-content-between sub-sponsors">
-							<div class="col sub-sponsor">
-								Sponsor Logo
+							<div class="col sub-sponsor available" style="background-image: url(images/sponsors/elastic.jpg)">
 							</div>
 							<div class="col sub-sponsor">
 								Sponsor Logo
