@@ -81,9 +81,9 @@
 
 						<div style="margin-top: 1rem">
 
-							<button class="btn" data-toggle="modal" data-target="#ticketModal">Get $10.00 Early Bird Tickets Now</button>
+							<button class="btn" data-toggle="modal" data-target="#ticket">Get $10.00 Early Bird Tickets Now</button>
 
-							<div class="modal fade" id="ticketModal" tabindex="-1" role="dialog" aria-labelledby="ticketModalLabel" aria-hidden="true">
+							<div class="modal fade" id="ticket" tabindex="-1" role="dialog" aria-labelledby="ticketLabel" aria-hidden="true">
 								<div class="modal-dialog" role="document">
 									<div class="modal-content">
 										<div class="modal-header">
@@ -118,10 +118,10 @@
 						<p style="font-style:italic">
 							<i class="fas fa-wheelchair" style="float:left; font-size: 3rem; margin-right: 1rem; margin-top: 0.5rem; color:#0B4E67"></i>
 							Regrettably in 2018 we have not been able to secure an appropriate venue that is
-							wheelchair accessible. <a href="#accessibleModal" data-toggle="modal">Read more ...</a>
+							wheelchair accessible. <a href="#accessible" data-toggle="modal">Read more ...</a>
 						</p>
 
-						<div class="modal fade" id="accessibleModal" tabindex="-1" role="dialog" aria-labelledby="accessibleModalLabel" aria-hidden="true">
+						<div class="modal fade" id="accessible" tabindex="-1" role="dialog" aria-labelledby="accessibleLabel" aria-hidden="true">
 							<div class="modal-dialog" role="document">
 								<div class="modal-content">
 									<div class="modal-header">
@@ -204,7 +204,7 @@
 						her machines and the knitted output. Be sure to join us in the upstairs library from 7pm to end
 						the year inspired and excited for 2019.
 					</p>
-					<button class="btn" data-toggle="modal" data-target="#ticketModal">Get $10.00 Early Bird Tickets Now</button>
+					<button class="btn" data-toggle="modal" data-target="#ticket">Get $10.00 Early Bird Tickets Now</button>
 				</div>
 			</div>
 
@@ -222,7 +222,7 @@
 						<li>You can park at <a href="https://www.wilsonparking.com.au/park/3311_474-Flinders-Street-Car-Park_474-Flinders-Street">Wilson Parking, 474 Flinders Street</a>, but please don't drive if you're drinking alcohol</li>
 						<li>Drinks and Finger Food provided by our sponsors and at bar prices if the tab runs out</li>
 					</ul>
-					<button class="btn" data-toggle="modal" data-target="#ticketModal">Get $10.00 Early Bird Tickets Now</button>
+					<button class="btn" data-toggle="modal" data-target="#ticket">Get $10.00 Early Bird Tickets Now</button>
 				</div>
 			</div>
 
@@ -233,15 +233,15 @@
 				<div class="col terms">
 					<p><b>Terms and Conditions</b></p>
 					<p>By purchasing tickets and by attending Mixup Melbourne, you agree to be bound by our published
-						<a href="#cocModal" data-toggle="modal">Code of Conduct</a> and you agree to have accepted our
-						<a href="#privacyModal" data-toggle="modal">Privacy Policy</a>.
+						<a href="#coc" data-toggle="modal">Code of Conduct</a> and you agree to have accepted our
+						<a href="#privacy" data-toggle="modal">Privacy Policy</a>.
 					</p>
 
-					<div class="modal fade" id="cocModal" tabindex="-1" role="dialog" aria-labelledby="cocModalTitle" aria-hidden="true">
+					<div class="modal fade" id="coc" tabindex="-1" role="dialog" aria-labelledby="cocTitle" aria-hidden="true">
 						<div class="modal-dialog modal-lg" role="document">
 							<div class="modal-content">
 								<div class="modal-header">
-									<h5 class="modal-title" id="cocModalTitle">Code of Conduct</h5>
+									<h5 class="modal-title" id="cocTitle">Code of Conduct</h5>
 									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 										<span aria-hidden="true">&times;</span>
 									</button>
@@ -283,11 +283,11 @@
 						</div>
 					</div>
 
-					<div class="modal fade" id="privacyModal" tabindex="-1" role="dialog" aria-labelledby="privacyModalTitle" aria-hidden="true">
+					<div class="modal fade" id="privacy" tabindex="-1" role="dialog" aria-labelledby="privacyTitle" aria-hidden="true">
 						<div class="modal-dialog modal-lg" role="document">
 							<div class="modal-content">
 								<div class="modal-header">
-									<h5 class="modal-title" id="privacyModalTitle">Privacy Policy</h5>
+									<h5 class="modal-title" id="privacyTitle">Privacy Policy</h5>
 									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 										<span aria-hidden="true">&times;</span>
 									</button>
@@ -319,5 +319,11 @@
 				</div>
 			</div>
 		</div>
+    <script>
+      if(window.location.hash) {
+        var hash = window.location.hash;
+        $(hash).filter("[role='dialog']").modal('toggle')
+      }
+    </script>
 	</body>
 </html>
