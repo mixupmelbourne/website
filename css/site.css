@@ -134,7 +134,7 @@ h1 {
 	}
 }
 
-div.terms p {
+div.terms p, div.terms li {
 	font-size: 0.8rem;
 	line-height: 1.6rem;
 	margin: 0;
