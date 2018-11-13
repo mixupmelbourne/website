@@ -66,6 +66,9 @@ a {
 	background-size: cover;
 	background-color: #c7e1f2;
 }
+.sub-sponsor a {
+  display: block;
+}
 .sub-sponsor.taken img {
 	max-height: 6.5rem;
 }
