@@ -284,7 +284,7 @@
     <script>
       if(window.location.hash) {
         var hash = window.location.hash;
-        $(hash).modal('toggle');
+        $(hash).filter("[role='dialog']").modal('toggle')
       }
     </script>
 	</body>
