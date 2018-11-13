@@ -1,0 +1,229 @@
+body {
+	background-color: #8EC2E5;
+}
+
+p {
+	line-height: 2rem;
+}
+
+a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.container {
+	margin-top: 1rem;
+}
+
+.poster img {
+	width: 100%;
+}
+
+.right-col {
+	text-align: center;
+}
+
+.top-sponsor-indent {
+	padding: 2rem;
+}
+.top-sponsor {
+	border: 2px dashed #FEF4D9;
+	border-radius: 1rem;
+	font-family: "refrigerator-deluxe";
+	font-weight: 300;
+	color: #FEF4D9;
+	font-size: 1.5rem;
+	padding: 0.75rem 2rem;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+}
+.sponsor-thanks {
+	font-family: "refrigerator-deluxe";
+	font-weight: 300;
+	font-size: 1.5rem;
+	color: #0B4E67;
+	margin-top: 1rem;
+}
+.sub-sponsor {
+	border: 2px dashed #FEF4D9;
+	border-radius: 1rem;
+	font-family: "refrigerator-deluxe";
+	font-weight: 300;
+	color: #FEF4D9;
+	font-size: 1.5rem;
+	padding: 0.75rem 1rem;
+	margin: 0 1rem 1rem 1rem;
+	height: 8rem;
+	overflow: hidden;
+	text-align: center;
+}
+.sub-sponsor.square {
+	width: 8rem;
+}
+.sub-sponsor.taken {
+	border-width: 0px;
+	background-size: cover;
+	background-color: #c7e1f2;
+}
+.sub-sponsor a {
+  display: block;
+}
+.sub-sponsor.taken img {
+	max-height: 6.5rem;
+}
+.sub-sponsor.taken.square img {
+	max-width: 100%;
+}
+
+
+
+/*!* These force the logo spaces to be squares *!*/
+.sub-sponsor.square:before {
+	content: '';
+	float: left;
+	width: 0;
+	height: 0;
+	padding-bottom: 100%;
+}
+.sub-sponsor.square:after {
+	display: table;
+	clear: both;
+}
+
+.sponsor-offer {
+	font-family: "refrigerator-deluxe";
+	font-weight: 300;
+	font-size: 1rem;
+	color: #0B4E67;
+	margin-top: 0;
+	text-align: right;
+}
+
+div.more-info p {
+	margin-top: 1rem;
+	text-align: left;
+}
+
+@media (max-width: 575.98px) {
+	.top-sponsor, .sub-sponsor {
+		font-size: 1.1rem;
+		padding: 0.5rem 1rem;
+	}
+}
+
+h1, h2 {
+	font-family: "refrigerator-deluxe";
+	font-weight: 400;
+	color: #0B4E67;
+	font-size: 2rem;
+	padding: 0;
+	margin: 1rem 0 0 0;
+	text-align: center;
+}
+h1 {
+	font-weight: 700;
+	font-size: 3.5rem;
+}
+@media (max-width: 575.98px) {
+	h1 {
+		font-size: 3.0rem;
+	}
+	h2 {
+		font-size: 1.5rem;
+	}
+}
+
+div.terms p {
+	font-size: 0.8rem;
+	line-height: 1.6rem;
+	margin: 0;
+}
+
+.buy-now {
+	/*border: 2px dashed #FEF4D9;*/
+	border-radius: 1rem;
+	background-image: url(../images/texture.png);
+	margin: 3rem 0;
+	padding: 1rem;
+}
+.buy-now h2 {
+	color: #FEF4D9;
+}
+.dotpoints {
+	margin: 0;
+	font-family: "refrigerator-deluxe";
+	font-weight: 300;
+	color: #FEF4D9;
+	font-size: 1.5rem;
+}
+.dotpoints p {
+	margin: 0.5rem 0 0 0;
+	padding: 0;
+	line-height: 2rem;
+}
+.fa-star {
+	font-size: 0.8rem;
+	display:inline-block;
+	width: 1rem;
+	height: 1rem;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.signup-indent {
+	padding: 2rem 4rem;
+}
+@media (max-width: 575.98px) {
+	.signup-indent {
+		padding: 2rem 1rem;
+	}
+}
+
+.signup {
+	border-radius: 1rem;
+	font-family: "refrigerator-deluxe";
+	font-weight: 400;
+	color: #041F39;
+	background-color: #FEF4D9;
+	font-size: 1.25rem;
+	padding: 1rem 1rem;
+	text-align: left;
+	display: inline-block;
+	width: 100%;
+	box-shadow: 0.5rem 0.5rem #041F39;
+}
+
+
+.textfield {
+	border: 2px solid #5C97C1;
+	display: grid;
+	grid-template-columns: 80% 20%;
+}
+.textfield input {
+	background: transparent;
+	border: 0px;
+	padding-left: 1rem;
+}
+.textfield button {
+	background: transparent;
+	border: 0px;
+	margin: 0.25rem;
+	font-size: 1rem;
+	background: #5C97C1;
+	border-radius: 0.5rem;
+	color: #FEF4D9;
+}
+
+.footnotes {
+	font-family: "refrigerator-deluxe";
+	font-weight: 400;
+	font-size: 0.75rem;
+}
+.footnotes > span {
+	white-space: pre;
+}
+.footnotes .fa-star {
+	font-size: 0.45rem;
+	height: 0.75rem;
+}
