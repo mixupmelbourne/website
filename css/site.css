@@ -63,14 +63,20 @@ a {
 }
 .sub-sponsor.taken {
 	border-width: 0px;
-	background-size: cover;
 	background-color: #c7e1f2;
 }
+
 .sub-sponsor a {
   display: block;
+	height: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
-.sub-sponsor.taken img {
-	max-height: 6.5rem;
+.sub-sponsor.taken div.logo-placeholder {
+	display: inline-block;
+	height: 100%;
+	width: 100%;
 }
 .sub-sponsor.taken.square img {
 	max-width: 100%;
