@@ -64,6 +64,14 @@ a {
 }
 
 .sub-sponsor a {
+	text-decoration: none;
+	color: #FEF4D9;
+}
+.sub-sponsor a:hover {
+	text-decoration: underline;
+}
+
+.sub-sponsor.taken a {
 	display: block;
 	height: 100%;
 	background-size: contain;
@@ -128,16 +136,23 @@ div.more-info p {
 	font-size: 1rem;
 	text-align: center;
 	color: #FEF4D9;
-	border: 1px solid #FEF4D9;
-	border-radius: 1rem;
 	padding: 0.5rem;
 	margin: 0.5rem;
-	max-height: 8rem;
+	max-height: 4rem;
 	max-width: 8rem;
-	min-width: 6rem;
+	min-width: 4rem;
+	background-color: #c7e1f2;
+	border-radius: 0.5rem;
 }
+
 .group.available {
-	font-size: 1.5rem;
+	border: 1px dashed #FEF4D9;
+	background: transparent;
+}
+
+.group.available p {
+	font-size: 1rem;
+	line-height: 1.2rem;
 }
 .group p {
 	width: 100%;
@@ -148,6 +163,10 @@ div.more-info p {
 	display: block;
 	width: 100%;
 	height: 100%;
+}
+.group a:hover {
+	color: #FEF4D9;
+	text-decoration: underline;
 }
 .group div.logo {
 	height: 75%;
@@ -160,7 +179,7 @@ div.more-info p {
 }
 
 #group-logos {
-	margin-bottom: 2rem;
+	margin-bottom: 4rem;
 }
 
 h1, h2 {
